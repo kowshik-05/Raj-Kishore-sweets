@@ -48,7 +48,7 @@ export default function Header() {
       </div>
       <div className="md:hidden border-t border-yellow-200/70">
         <nav
-          className=" mx-auto px-4 py-2 flex gap-2 overflow-x-auto"
+          className="mx-auto px-4 py-2 flex gap-2 overflow-x-auto"
           aria-label="Primary mobile"
         >
           {navItems.map((n) => (

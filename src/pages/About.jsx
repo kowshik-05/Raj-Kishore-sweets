@@ -4,7 +4,22 @@ import Card from "../components/Card";
 
 export default function AboutPage() {
   return (
-    <main className=" mx-auto px-4 sm:px-6 py-10">
+    <main className="mx-auto px-4 sm:px-6 py-10">
+      {/* --- Banner Section --- */}
+      <div className="relative w-full mb-10 h-64 sm:h-80 lg:h-96 rounded-2xl overflow-hidden shadow-md">
+        <img
+          src="/images/about-banner.jpg" // <-- replace with actual banner image
+          alt="Raj Kishore Sweets Banner"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold drop-shadow-lg text-center">
+            About Raj Kishore Sweets
+          </h1>
+        </div>
+      </div>
+
+      {/* --- Story Section --- */}
       <SectionTitle kicker="Our Story" title="Crafting Sweet Memories" />
       <div className="mt-8 grid md:grid-cols-2 gap-8 items-start">
         <Card>

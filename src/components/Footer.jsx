@@ -20,7 +20,7 @@ export default function Footer() {
           </p>
           <a
             className="text-sm mt-2 inline-block underline text-red-700"
-            href="https://www.google.com/maps/place/Raj+Kishore's/@26.4629025,80.3507289,17z"
+            href="https://maps.app.goo.gl/BLajBVxs8ifvyCJw7"
             target="_blank"
             rel="noreferrer"
           >

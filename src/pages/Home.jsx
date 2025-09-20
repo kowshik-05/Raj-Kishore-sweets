@@ -6,6 +6,7 @@ import Card from "../components/Card";
 import SweetCard from "../components/SweetCard";
 import { bestsellers, categories } from "../data/catalog";
 import { waLink } from "../utils/whatsapp";
+import CarouselSection from "../components/Carousel";
 
 function Hero() {
   return (
@@ -34,7 +35,7 @@ function Hero() {
               )}
               target="_blank"
               rel="noreferrer"
-              className="px-5 py-3 rounded-2xl bg-red-600 text-yellow-50 font-semibold shadow hover:shadow-md"
+              className="px-5 py-3 rounded-2xl bg-red-600 text-yellow-100 font-semibold shadow hover:shadow-md"
             >
               Order on WhatsApp
             </a>
@@ -152,6 +153,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <CarouselSection />
+
       <section className="py-14 md:py-20">
         <div className=" mx-auto px-4 sm:px-6">
           <SectionTitle kicker="Quality First" title="Why Choose Us" />
@@ -197,14 +200,14 @@ export default function HomePage() {
 
       <section className="py-14 md:py-20">
         <div className=" mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 items-center">
-          <div>
+          <div className="items-center justify-center">
             <SectionTitle
               kicker="Find Us"
               title="Visit Our Store"
               subtitle="Birhana Road, Kanpur — centrally located and easy to reach."
             />
             <a
-              href="https://www.google.com/maps/place/Raj+Kishore's/@26.4629025,80.3507289,17z"
+              href="https://maps.app.goo.gl/BLajBVxs8ifvyCJw7"
               target="_blank"
               rel="noreferrer"
               className="inline-block mt-6 px-5 py-3 rounded-2xl bg-red-600 text-yellow-50 font-semibold"
