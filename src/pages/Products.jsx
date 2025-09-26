@@ -60,24 +60,52 @@ export default function ProductsPage() {
             className="group"
           >
             <Card>
+              {/* Image area */}
               <div className="aspect-[4/3] bg-gradient-to-br from-yellow-50 to-red-50 grid place-content-center">
-                <div className="w-20 h-20 rounded-full bg-red-600/90 grid place-content-center text-yellow-50 font-bold">
-                  {item.name
-                    .split(" ")
-                    .map((w) => w[0])
-                    .join("")}
-                </div>
+                {item.image ? (
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-24 h-24 rounded-full object-cover shadow-md"
+                  />
+                ) : (
+                  <div className="w-20 h-20 rounded-full bg-red-600/90 grid place-content-center text-yellow-50 font-bold shadow-md">
+                    {item.name
+                      .split(" ")
+                      .map((w) => w[0])
+                      .join("")}
+                  </div>
+                )}
               </div>
+
+              {/* Text area */}
               <div className="p-4">
-                <h3 className="text-lg font-semibold text-red-800 group-hover:underline">
-                  {item.name}
-                </h3>
-                <p className="text-sm text-red-900/70">
-                  ₹{item.price} / {item.unit}
-                </p>
-                <p className="mt-2 inline-flex items-center text-sm font-semibold text-red-700">
+                <div className="flex justify-between items-center">
+                  <h3 className="text-lg font-semibold text-red-800 group-hover:underline">
+                    {item.name}
+                  </h3>
+                  <p className="text-sm font-semibold text-red-700 whitespace-nowrap">
+                    ₹{item.price} / {item.unit}
+                  </p>
+                </div>
+
+                {/* Description (optional) */}
+                {item.description && (
+                  <p className="mt-2 text-sm text-red-900/70">
+                    {item.description}
+                  </p>
+                )}
+
+                <a
+                  href={waLink(
+                    `Hi! I’d like to order ${item.name} (₹${item.price}/${item.unit}).`
+                  )}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-3 inline-flex items-center text-sm font-semibold text-red-700 hover:underline"
+                >
                   Chat & Order ↗
-                </p>
+                </a>
               </div>
             </Card>
           </a>
