@@ -7,15 +7,15 @@ export default function SweetCard({ item }) {
   return (
     <Card>
       {/* Image / Initials */}
-      <div className="aspect-[4/3] bg-gradient-to-br from-yellow-50 to-red-50 grid place-content-center">
-        {item.image ? (
+      <div className="aspect-[4/3] bg-gradient-to-br from-yellow-50 to-red-50">
+        {item.picture ? (
           <img
-            src={item.image}
+            src={item.picture}
             alt={item.name}
-            className="w-24 h-24 rounded-full object-cover shadow-md"
+            className="w-full h-full object-cover"
           />
         ) : (
-          <div className="w-20 h-20 rounded-full bg-red-600/90 grid place-content-center text-yellow-50 font-bold shadow-md">
+          <div className="w-full h-full flex items-center justify-center bg-red-600/90 text-yellow-50 font-bold text-2xl">
             {item.name
               .split(" ")
               .map((w) => w[0])
