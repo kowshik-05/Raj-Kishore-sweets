@@ -19,8 +19,8 @@ export const catalog = [
   {
     id: "2",
     picture: "/images/DSC08750.JPG",
-    name: "Gulab Jamun",
-    price: 320,
+    name: "Khoya mix",
+    price: 600,
     unit: "kg",
     cat: "mithai",
     description:
@@ -29,8 +29,8 @@ export const catalog = [
   {
     id: "3",
     picture: "/images/DSC08751.JPG",
-    name: "Kaju Katli",
-    price: 900,
+    name: "Boondi Ladoo plane",
+    price: 620,
     unit: "kg",
     cat: "dryfruit",
     description:
@@ -49,9 +49,9 @@ export const catalog = [
   {
     id: "5",
     picture: "/images/DSC08770.JPG",
-    name: "Namkeen Mixture",
-    price: 260,
-    unit: "kg",
+    name: "Boondi ladoo plane ",
+    price: 310,
+    unit: "half kg",
     cat: "namkeen",
     description:
       "Crispy, spicy, and tangy mixture of sev, boondi, and fried pulses.",
@@ -59,8 +59,8 @@ export const catalog = [
   {
     id: "6",
     picture: "/images/DSC08775.JPG",
-    name: "Rasmalai",
-    price: 540,
+    name: "Boondi ladoo mewa",
+    price: 720,
     unit: "kg",
     cat: "bengali",
     description:
@@ -69,8 +69,8 @@ export const catalog = [
   {
     id: "7",
     picture: "/images/DSC08776.JPG",
-    name: "Soan Papdi",
-    price: 300,
+    name: "Churam ladoo",
+    price: 720,
     unit: "kg",
     cat: "seasonal",
     description:
@@ -79,8 +79,8 @@ export const catalog = [
   {
     id: "8",
     picture: "/images/DSC08788.JPG",
-    name: "Anjeer Barfi",
-    price: 1100,
+    name: "Besan Barfi",
+    price: 660,
     unit: "kg",
     cat: "dryfruit",
     description:
@@ -89,8 +89,8 @@ export const catalog = [
   {
     id: "9",
     picture: "/images/DSC08794.JPG",
-    name: "Besan Ladoo",
-    price: 400,
+    name: "Kheer kadam",
+    price: 600,
     unit: "kg",
     cat: "mithai",
     description: "Classic Indian sweet made from gram flour, ghee, and sugar.",
@@ -98,8 +98,8 @@ export const catalog = [
   {
     id: "10",
     picture: "/images/DSC08797.JPG",
-    name: "Chikki",
-    price: 350,
+    name: "Deluxe kheer kadam",
+    price: 600,
     unit: "kg",
     cat: "dryfruit",
     description: "Crunchy jaggery and peanut brittle, perfect for snacking.",
@@ -107,8 +107,8 @@ export const catalog = [
   {
     id: "11",
     picture: "/images/DSC08802.JPG",
-    name: "Mysore Pak",
-    price: 450,
+    name: "Chandrakala",
+    price: 660,
     unit: "kg",
     cat: "mithai",
     description: "Soft, melt-in-mouth sweet made with gram flour and ghee.",
@@ -116,8 +116,8 @@ export const catalog = [
   {
     id: "12",
     picture: "/images/DSC08806.JPG",
-    name: "Haldiram Bhujia",
-    price: 250,
+    name: "Magdal",
+    price: 660,
     unit: "kg",
     cat: "namkeen",
     description: "Spicy and crispy bhujia made from gram flour and spices.",
@@ -125,8 +125,8 @@ export const catalog = [
   {
     id: "13",
     picture: "/images/DSC08811.JPG",
-    name: "Kesar Peda",
-    price: 500,
+    name: "Kaju barfi",
+    price: 580,
     unit: "kg",
     cat: "mithai",
     description: "Soft, flavored milk sweets with a hint of saffron.",
@@ -134,8 +134,8 @@ export const catalog = [
   {
     id: "14",
     picture: "/images/DSC08813.JPG",
-    name: "Pista Barfi",
-    price: 950,
+    name: "Kaju gujhya",
+    price: 1260,
     unit: "kg",
     cat: "dryfruit",
     description: "Rich pistachio-flavored fudge topped with silver leaf.",
@@ -143,8 +143,8 @@ export const catalog = [
   {
     id: "15",
     picture: "/images/DSC08818.JPG",
-    name: "Dhokla",
-    price: 300,
+    name: "Kaju roll",
+    price: 1260,
     unit: "kg",
     cat: "namkeen",
     description: "Steamed, spongy, and savory snack from gram flour.",
@@ -152,8 +152,8 @@ export const catalog = [
   {
     id: "16",
     picture: "/images/DSC08827.JPG",
-    name: "Gajar Halwa",
-    price: 600,
+    name: "Anjir roll",
+    price: 1260,
     unit: "kg",
     cat: "seasonal",
     description: "Sweet carrot pudding cooked in milk, ghee, and sugar.",
@@ -170,8 +170,8 @@ export const catalog = [
   {
     id: "18",
     picture: "/images/DSC08838.JPG",
-    name: "Kalakand",
-    price: 500,
+    name: "Kaju pann",
+    price: 1260,
     unit: "kg",
     cat: "mithai",
     description: "Soft milk-based sweet with a creamy texture.",
@@ -179,8 +179,8 @@ export const catalog = [
   {
     id: "19",
     picture: "/images/DSC08842.JPG",
-    name: "Sev Mamra Mixture",
-    price: 270,
+    name: "Kaju kesar",
+    price: 1260,
     unit: "kg",
     cat: "namkeen",
     description: "Lightly spiced puffed rice and sev mixture.",
@@ -188,8 +188,8 @@ export const catalog = [
   {
     id: "20",
     picture: "/images/DSC08846.JPG",
-    name: "Lauki Halwa",
-    price: 450,
+    name: "Kaju bite",
+    price: 1260,
     unit: "kg",
     cat: "seasonal",
     description: "Sweet bottle gourd pudding flavored with cardamom and nuts.",
@@ -197,8 +197,8 @@ export const catalog = [
   {
     id: "21",
     picture: "/images/DSC08851.JPG",
-    name: "Kesar Roll",
-    price: 850,
+    name: "Kaju gilori",
+    price: 1260,
     unit: "kg",
     cat: "mithai",
     description: "Soft, rich sweet rolled with saffron-flavored filling.",
@@ -215,8 +215,8 @@ export const catalog = [
   {
     id: "23",
     picture: "/images/DSC08860.JPG",
-    name: "Chana Jor Garam",
-    price: 240,
+    name: "Mewa mix",
+    price: 1260,
     unit: "kg",
     cat: "namkeen",
     description: "Spiced, flattened chickpeas for crunchy snacking.",
@@ -224,8 +224,8 @@ export const catalog = [
   {
     id: "24",
     picture: "/images/DSC08865.JPG",
-    name: "Dry Fruit Ladoo",
-    price: 900,
+    name: "Mewa mix",
+    price: 1260,
     unit: "kg",
     cat: "dryfruit",
     description: "Nutty sweet balls made with dry fruits and jaggery.",
@@ -233,8 +233,8 @@ export const catalog = [
   {
     id: "25",
     picture: "/images/DSC08869.JPG",
-    name: "Mango Barfi",
-    price: 500,
+    name: "Kaju chakri",
+    price: 1260,
     unit: "kg",
     cat: "seasonal",
     description: "Sweet mango-flavored fudge for seasonal delight.",
@@ -242,8 +242,8 @@ export const catalog = [
   {
     id: "26",
     picture: "/images/DSC08873.JPG",
-    name: "Til Ladoo",
-    price: 400,
+    name: "Kaju daimond",
+    price: 1260,
     unit: "kg",
     cat: "mithai",
     description: "Sesame seeds sweetened with jaggery, a festive favorite.",
@@ -251,8 +251,8 @@ export const catalog = [
   {
     id: "27",
     picture: "/images/DSC08876.JPG",
-    name: "Moong Dal Chikki",
-    price: 380,
+    name: "Anjir chakri",
+    price: 1260,
     unit: "kg",
     cat: "dryfruit",
     description: "Crunchy jaggery brittle with moong dal.",
@@ -260,8 +260,8 @@ export const catalog = [
   {
     id: "28",
     picture: "/images/DSC08883.JPG",
-    name: "Farsan Mixture",
-    price: 260,
+    name: "kaju barfi",
+    price: 1160,
     unit: "kg",
     cat: "namkeen",
     description: "Savory snack mix with nuts, sev, and spices.",
@@ -269,8 +269,8 @@ export const catalog = [
   {
     id: "29",
     picture: "/images/DSC08886.JPG",
-    name: "Rawa Ladoo",
-    price: 350,
+    name: "Kaju Starwberry bite",
+    price: 1260,
     unit: "kg",
     cat: "mithai",
     description: "Sweet made from semolina, sugar, and ghee.",
@@ -278,8 +278,8 @@ export const catalog = [
   {
     id: "30",
     picture: "/images/DSC08891.JPG",
-    name: "Kesar Peda Roll",
-    price: 900,
+    name: "Khajur bite",
+    price: 1260,
     unit: "kg",
     cat: "dryfruit",
     description: "Rich roll flavored with saffron and dry fruits.",
@@ -287,7 +287,7 @@ export const catalog = [
   {
     id: "31",
     picture: "/images/DSC08895.JPG",
-    name: "Choco Barfi",
+    name: "kaju chakri",
     price: 650,
     unit: "kg",
     cat: "mithai",
@@ -332,11 +332,12 @@ export const catalog = [
   {
     id: "36",
     picture: "/images/DSC08930.JPG",
-    name: "Chocolate Soan Papdi",
+    name: "Special 4 type ladoo",
     price: 350,
     unit: "kg",
     cat: "seasonal",
-    description: "Flaky sweet infused with chocolate flavor.",
+    description:
+      "Special 4 type chaukdi bundi mewa ladoo Atta gond ladoo Mungdal ladoo Besan ladoo",
   },
   {
     id: "37",
@@ -350,8 +351,8 @@ export const catalog = [
   {
     id: "38",
     picture: "/images/DSC08936.JPG",
-    name: "Gulab Ladoo",
-    price: 420,
+    name: "Anjir daimond",
+    price: 1260,
     unit: "kg",
     cat: "mithai",
     description: "Soft laddoo soaked in rose syrup, festive favorite.",
@@ -359,17 +360,17 @@ export const catalog = [
   {
     id: "39",
     picture: "/images/DSC08939.JPG",
-    name: "Masala Sev",
-    price: 260,
-    unit: "kg",
+    name: "Kaju barfi",
+    price: 580,
+    unit: "half kg",
     cat: "namkeen",
     description: "Crispy sev with a spicy kick.",
   },
   {
     id: "40",
     picture: "/images/DSC08944.JPG",
-    name: "Kesar Rasgulla",
-    price: 320,
+    name: "Khoya pudding",
+    price: 600,
     unit: "kg",
     cat: "bengali",
     description: "Rasgulla flavored with saffron for extra aroma.",
