@@ -89,12 +89,12 @@ export default function ProductsPage() {
                   </p>
                 </div>
 
-                {/* Description (optional) */}
+                {/* Description (optional)
                 {item.description && (
                   <p className="mt-2 text-sm text-red-900/70">
                     {item.description}
                   </p>
-                )}
+                )} */}
 
                 <a
                   href={waLink(

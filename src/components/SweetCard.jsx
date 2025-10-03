@@ -33,9 +33,9 @@ export default function SweetCard({ item }) {
           </p>
         </div>
 
-        {item.description && (
+        {/* {item.description && (
           <p className="mt-2 text-sm text-red-900/70">{item.description}</p>
-        )}
+        )} */}
 
         {/* Buttons */}
         <div className="mt-3 flex gap-2">

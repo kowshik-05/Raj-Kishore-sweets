@@ -1,20 +1,17 @@
 import React, { useMemo } from "react";
 
-/**
- * CarouselSection
- * - Theme: warm yellow bg, red accents, soft shadows
- * - Infinite autoscroll (no dots/buttons/scrollbar)
- * - Card-style thumbnails (not full-width)
- * - Graceful placeholders if images = []
- *
- * Props:
- *  images: string[] (image URLs)
- *  height: Tailwind height classes for the card track (e.g., "h-48 sm:h-64")
- *  speed: number (seconds for a full loop; auto-calculated if not provided)
- *  title?: string (optional heading for the section)
- */
+// ✅ Added images from public/images
+const defaultImages = [
+  "/images/DSC08730.JPG",
+  "/images/DSC08740.JPG",
+  "/images/DSC08750.JPG",
+  "/images/DSC08761.JPG",
+  "/images/DSC08770.JPG",
+  "/images/DSC08782.JPG",
+];
+
 export default function CarouselSection({
-  images = [],
+  images = defaultImages, // use our image list by default
   height = "h-48 sm:h-64",
   speed, // optional override, in seconds
   title = "Custom Carousel", // ✅ Added heading prop
@@ -46,7 +43,6 @@ export default function CarouselSection({
     <section
       className="relative w-full overflow-hidden border-y border-yellow-200 bg-gradient-to-b from-yellow-50 via-yellow-50 to-red-50 py-10"
       aria-label="Featured sweets carousel"
-      // Fade edges for a nicer look
       style={{
         WebkitMaskImage:
           "linear-gradient(to right, transparent, black 5%, black 95%, transparent)",
@@ -63,10 +59,8 @@ export default function CarouselSection({
         {/* Track */}
         <div
           className={`relative flex ${height} gap-3 sm:gap-4 group`}
-          // Control animation speed via CSS variable
           style={{ ["--rk-speed"]: duration }}
         >
-          {/* Two identical lanes scrolling for a clean loop */}
           <Track items={loop} height={height} />
         </div>
       </div>
@@ -98,13 +92,11 @@ export default function CarouselSection({
 function Track({ items, height }) {
   return (
     <>
-      {/* Lane A */}
       <div className={`rk-marquee ${height}`}>
         {items.map((src, i) => (
           <Card key={`a-${i}`} src={src} />
         ))}
       </div>
-      {/* Lane B (immediately following, to cover the gap) */}
       <div className={`rk-marquee ${height}`} aria-hidden="true">
         {items.map((src, i) => (
           <Card key={`b-${i}`} src={src} />

@@ -200,7 +200,7 @@ export default function HomePage() {
 
       <section className="py-14 md:py-20">
         <div className=" mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 items-center">
-          <div className="items-center justify-center">
+          <div className="flex flex-col items-center justify-center text-center">
             <SectionTitle
               kicker="Find Us"
               title="Visit Our Store"
@@ -215,6 +215,7 @@ export default function HomePage() {
               Open in Google Maps
             </a>
           </div>
+
           <div>
             <iframe
               title="Raj Kishore Sweets on Google Maps"
