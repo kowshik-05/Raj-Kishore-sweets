@@ -5,7 +5,6 @@ import { waLink } from "../utils/whatsapp";
 
 const navItems = [
   { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
   { to: "/products", label: "Products" },
   { to: "/contact", label: "Contact" },
 ];

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import SectionTitle from "../components/SectionTitle";
@@ -9,9 +9,10 @@ import { waLink } from "../utils/whatsapp";
 import CarouselSection from "../components/Carousel";
 
 function Hero() {
+  const [imageAvailable, setImageAvailable] = useState(true);
   return (
     <section className="bg-gradient-to-br from-yellow-100 via-yellow-50 to-red-50">
-      <div className=" mx-auto px-4 sm:px-6 py-14 md:py-20 grid md:grid-cols-2 gap-10 items-center">
+      <div className=" mx-auto px-4 sm:px-6 py-14 md:py-5 grid md:grid-cols-2 gap-10 items-center">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -59,51 +60,72 @@ function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
         >
           <div className="relative aspect-square rounded-3xl bg-yellow-100 shadow-inner overflow-hidden">
-            <svg viewBox="0 0 400 400" className="w-full h-full">
-              <defs>
-                <radialGradient id="plate" cx="50%" cy="50%" r="60%">
-                  <stop offset="0%" stopColor="#FEF9C3" />
-                  <stop offset="100%" stopColor="#FDE68A" />
-                </radialGradient>
-              </defs>
-              <circle
-                cx="200"
-                cy="200"
-                r="160"
-                fill="url(#plate)"
-                stroke="#F59E0B"
-                strokeWidth="6"
+            {imageAvailable ? (
+              <img
+                src="/Photos/Rajkishore.jpg"
+                alt="Raj Kishore Sweet"
+                className="w-full h-full object-contain"
+                onError={() => setImageAvailable(false)} // fallback trigger
               />
-              <g>
-                <circle cx="150" cy="160" r="28" fill="#DC2626" opacity="0.9" />
-                <circle cx="210" cy="120" r="24" fill="#B91C1C" opacity="0.9" />
-                <rect
-                  x="230"
-                  y="190"
-                  width="60"
-                  height="40"
-                  rx="8"
-                  fill="#F59E0B"
+            ) : (
+              <svg viewBox="0 0 400 400" className="w-full h-full">
+                <defs>
+                  <radialGradient id="plate" cx="50%" cy="50%" r="60%">
+                    <stop offset="0%" stopColor="#FEF9C3" />
+                    <stop offset="100%" stopColor="#FDE68A" />
+                  </radialGradient>
+                </defs>
+                <circle
+                  cx="200"
+                  cy="200"
+                  r="160"
+                  fill="url(#plate)"
+                  stroke="#F59E0B"
+                  strokeWidth="6"
                 />
-                <rect
-                  x="110"
-                  y="210"
-                  width="60"
-                  height="40"
-                  rx="8"
-                  fill="#FBBF24"
-                />
-                <circle cx="200" cy="250" r="30" fill="#F97316" />
-                <rect
-                  x="170"
-                  y="180"
-                  width="40"
-                  height="22"
-                  rx="6"
-                  fill="#E11D48"
-                />
-              </g>
-            </svg>
+                <g>
+                  <circle
+                    cx="150"
+                    cy="160"
+                    r="28"
+                    fill="#DC2626"
+                    opacity="0.9"
+                  />
+                  <circle
+                    cx="210"
+                    cy="120"
+                    r="24"
+                    fill="#B91C1C"
+                    opacity="0.9"
+                  />
+                  <rect
+                    x="230"
+                    y="190"
+                    width="60"
+                    height="40"
+                    rx="8"
+                    fill="#F59E0B"
+                  />
+                  <rect
+                    x="110"
+                    y="210"
+                    width="60"
+                    height="40"
+                    rx="8"
+                    fill="#FBBF24"
+                  />
+                  <circle cx="200" cy="250" r="30" fill="#F97316" />
+                  <rect
+                    x="170"
+                    y="180"
+                    width="40"
+                    height="22"
+                    rx="6"
+                    fill="#E11D48"
+                  />
+                </g>
+              </svg>
+            )}
           </div>
         </motion.div>
       </div>
@@ -116,6 +138,7 @@ export default function HomePage() {
     <main>
       <Hero />
 
+      {/* Bestsellers */}
       <section className="py-14 md:py-20">
         <div className=" mx-auto px-4 sm:px-6">
           <SectionTitle
@@ -131,7 +154,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-14 md:py-20 bg-yellow-50 border-y border-yellow-200">
+      {/* categories */}
+      {/* <section className="py-14 md:py-20 bg-yellow-50 border-y border-yellow-200">
         <div className=" mx-auto px-4 sm:px-6">
           <SectionTitle
             kicker="Explore"
@@ -151,7 +175,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <CarouselSection />
 
@@ -179,7 +203,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-14 md:py-20 bg-yellow-50 border-y border-yellow-200">
+      {/* <section className="py-14 md:py-20 bg-yellow-50 border-y border-yellow-200">
         <div className=" mx-auto px-4 sm:px-6">
           <SectionTitle kicker="Loved by Many" title="Customer Reviews" />
           <div className="mt-8 grid md:grid-cols-3 gap-5">
@@ -196,8 +220,46 @@ export default function HomePage() {
             ))}
           </div>
         </div>
+      </section> */}
+
+      {/* About Us */}
+      <section className="py-14 md:py-20">
+        <div className=" mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 items-center">
+          <div className="w-100 mx-auto">
+            <img
+              src="/about.jpg"
+              alt="About Raj Kishore Sweets"
+              className="w-full rounded-2xl shadow"
+            />
+          </div>
+          <div>
+            <SectionTitle
+              kicker="About Us"
+              title="Our Story"
+              subtitle="Discover the legacy behind Raj Kishore Sweets."
+            />
+            <p className="mt-4 text-red-900/80">
+              Our story goes back to the 1920s, when our forefathers started
+              making mithai from Kahoo Kothi. It was never about business back
+              then — it was about keeping the Marwadi tradition alive through
+              pure ingredients and honest work.
+            </p>
+            <p className="mt-4 text-red-900/80">
+              In 1984, we opened the first Rajkishore's Sweets shop. What began
+              in a small kitchen slowly became a name people started trusting.
+            </p>
+            <p className="mt-4 text-red-900/80">
+              Now, it's been four generations, and we still follow the same old
+              way — making sweets with love, patience, and care. For us, it's
+              not just about selling mithai. It's about carrying forward what
+              our forefathers started — a taste, a value, and a tradition that
+              will always stay with us.
+            </p>
+          </div>
+        </div>
       </section>
 
+      {/* Location */}
       <section className="py-14 md:py-20">
         <div className=" mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 items-center">
           <div className="flex flex-col items-center justify-center text-center">

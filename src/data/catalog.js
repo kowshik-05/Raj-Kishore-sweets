@@ -396,7 +396,7 @@ export const catalog = [
 ];
 
 // Bestseller IDs (referencing catalog IDs)
-const bestsellerIds = ["1", "2", "3", "4"];
+const bestsellerIds = ["1", "2", "3", "4", "9", "14", "21", "22"];
 
 // Bestsellers derived from catalog
 export const bestsellers = catalog.filter((item) =>

@@ -1,11 +1,12 @@
 import React from "react";
 import Logo from "./Logo";
 import { waLink } from "../utils/whatsapp";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <footer className="mt-16 border-t border-yellow-200 bg-yellow-50">
-      <div className=" mx-auto px-4 sm:px-6 py-10 grid md:grid-cols-4 gap-8">
+      <div className="mx-auto px-4 sm:px-6 py-10 grid md:grid-cols-4 gap-8">
         <div>
           <Logo />
           <p className="mt-3 text-sm text-red-800/80">
@@ -13,6 +14,7 @@ export default function Footer() {
             Kanpur.
           </p>
         </div>
+
         <div>
           <h4 className="text-red-700 font-semibold">Visit Us</h4>
           <p className="text-sm mt-2 text-red-800/80">
@@ -27,24 +29,38 @@ export default function Footer() {
             Open in Google Maps
           </a>
         </div>
+
         <div>
           <h4 className="text-red-700 font-semibold">Timings</h4>
           <p className="text-sm mt-2 text-red-800/80">
             Mon–Sun: 9:00 AM – 10:00 PM
           </p>
         </div>
+
         <div>
           <h4 className="text-red-700 font-semibold">Contact</h4>
           <a
-            className="underline"
+            className="underline block"
             href={waLink("Hi! I have a query.")}
             target="_blank"
             rel="noreferrer"
           >
             Chat on WhatsApp
           </a>
+
+          {/* Instagram link */}
+          <a
+            href="https://www.instagram.com/rajkishore_sweets"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 mt-10 text-red-700 hover:text-red-800"
+          >
+            <FaInstagram className="text-lg" />
+            <span className="underline text-sm">Follow on Instagram</span>
+          </a>
         </div>
       </div>
+
       <div className="border-t border-yellow-200/70 py-4 text-center text-xs text-red-800/70">
         © {new Date().getFullYear()} Raj Kishore Sweets. All rights reserved.
       </div>

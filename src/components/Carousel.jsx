@@ -2,19 +2,33 @@ import React, { useMemo } from "react";
 
 // ✅ Added images from public/images
 const defaultImages = [
-  "/images/DSC08730.JPG",
-  "/images/DSC08740.JPG",
-  "/images/DSC08750.JPG",
-  "/images/DSC08761.JPG",
-  "/images/DSC08770.JPG",
-  "/images/DSC08782.JPG",
+  "/Photos/Rajkishore-1.jpg",
+  "/Photos/Rajkishore-2.jpg",
+  "/Photos/Rajkishore-3.jpg",
+  "/Photos/Rajkishore-4.jpg",
+  "/Photos/Rajkishore-5.jpg",
+  "/Photos/Rajkishore-6.jpg",
+  "/Photos/Rajkishore-7.jpg",
+  "/Photos/Rajkishore-8.jpg",
+  "/Photos/Rajkishore-9.jpg",
+  "/Photos/Rajkishore-10.jpg",
+  "/Photos/Rajkishore-11.jpg",
+  "/Photos/Rajkishore-12.jpg",
+  "/Photos/Rajkishore-13.jpg",
+  "/Photos/Rajkishore-14.jpg",
+  "/Photos/Rajkishore-15.jpg",
+  "/Photos/Rajkishore-16.jpg",
+  "/Photos/Rajkishore-17.jpg",
+  "/Photos/Rajkishore-18.jpg",
+  "/Photos/Rajkishore-19.jpg",
+  "/Photos/Rajkishore-20.jpg",
 ];
 
 export default function CarouselSection({
   images = defaultImages, // use our image list by default
   height = "h-48 sm:h-64",
   speed, // optional override, in seconds
-  title = "Custom Carousel", // ✅ Added heading prop
+  title = "Beautifully carved Sweets", // ✅ Added heading prop
 }) {
   // Use themed placeholders if no images provided
   const items = images.length
