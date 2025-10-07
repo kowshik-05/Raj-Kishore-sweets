@@ -32,7 +32,7 @@ export default function ProductsPage() {
         title="Products"
         subtitle="Tap a product to chat & order on WhatsApp."
       />
-      <div className="mt-6 flex flex-wrap gap-2">
+      {/* <div className="mt-6 flex flex-wrap gap-2">
         <FilterChip
           label="All"
           active={cat === "all"}
@@ -46,7 +46,7 @@ export default function ProductsPage() {
             onClick={() => changeCat(c.key)}
           />
         ))}
-      </div>
+      </div> */}
       <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {filtered.map((item) => (
           <a
