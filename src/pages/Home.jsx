@@ -8,127 +8,138 @@ import { bestsellers, categories } from "../data/catalog";
 import { waLink } from "../utils/whatsapp";
 import CarouselSection from "../components/Carousel";
 
+// function Hero() {
+//   const [imageAvailable, setImageAvailable] = useState(true);
+//   return (
+//     <section className="bg-gradient-to-br from-yellow-100 via-yellow-50 to-red-50">
+//       <div className=" mx-auto px-4 sm:px-6 py-14 md:py-5 grid md:grid-cols-2 gap-10 items-center">
+//         <motion.div
+//           initial={{ opacity: 0, y: 10 }}
+//           animate={{ opacity: 1, y: 0 }}
+//           transition={{ duration: 0.6 }}
+//         >
+//           <p className="text-sm font-semibold tracking-wide uppercase text-red-700">
+//             Authentic • Fresh • Handcrafted
+//           </p>
+//           <h1 className="mt-3 text-4xl md:text-5xl font-extrabold text-red-700 leading-tight">
+//             Celebrate every moment with{" "}
+//             <span className="text-red-600">Raj Kishore Sweets</span>
+//           </h1>
+//           <p className="mt-4 text-red-900/80">
+//             From classic rasgulla to premium kaju katli—discover mithai that’s
+//             made fresh daily with quality ingredients and traditional recipes.
+//           </p>
+//           <div className="mt-6 flex gap-3">
+//             <a
+//               href={waLink(
+//                 "Hi! I’d like to place an order for pickup/delivery."
+//               )}
+//               target="_blank"
+//               rel="noreferrer"
+//               className="px-5 py-3 rounded-2xl bg-red-600 text-yellow-100 font-semibold shadow hover:shadow-md"
+//             >
+//               Order on WhatsApp
+//             </a>
+//             <Link
+//               to="/products"
+//               className="px-5 py-3 rounded-2xl bg-yellow-200 text-red-800 font-semibold border border-yellow-300 hover:bg-yellow-300"
+//             >
+//               Browse Products
+//             </Link>
+//           </div>
+//           <ul className="mt-6 text-sm text-red-900/80 grid grid-cols-2 gap-x-6 gap-y-2 list-disc pl-5">
+//             <li>Same-day preparation on most items</li>
+//             <li>Bulk & corporate orders welcome</li>
+//             <li>Custom gift boxes</li>
+//             <li>Hygienic, FSSAI compliant kitchen</li>
+//           </ul>
+//         </motion.div>
+//         <motion.div
+//           initial={{ opacity: 0, scale: 0.98 }}
+//           animate={{ opacity: 1, scale: 1 }}
+//           transition={{ duration: 0.6, delay: 0.1 }}
+//         >
+//           <div className="relative aspect-square rounded-3xl bg-yellow-100 shadow-inner overflow-hidden">
+//             {imageAvailable ? (
+//               <img
+//                 src="/Photos/Rajkishore.jpg"
+//                 alt="Raj Kishore Sweet"
+//                 className="w-full h-full object-contain"
+//                 onError={() => setImageAvailable(false)} // fallback trigger
+//               />
+//             ) : (
+//               <svg viewBox="0 0 400 400" className="w-full h-full">
+//                 <defs>
+//                   <radialGradient id="plate" cx="50%" cy="50%" r="60%">
+//                     <stop offset="0%" stopColor="#FEF9C3" />
+//                     <stop offset="100%" stopColor="#FDE68A" />
+//                   </radialGradient>
+//                 </defs>
+//                 <circle
+//                   cx="200"
+//                   cy="200"
+//                   r="160"
+//                   fill="url(#plate)"
+//                   stroke="#F59E0B"
+//                   strokeWidth="6"
+//                 />
+//                 <g>
+//                   <circle
+//                     cx="150"
+//                     cy="160"
+//                     r="28"
+//                     fill="#DC2626"
+//                     opacity="0.9"
+//                   />
+//                   <circle
+//                     cx="210"
+//                     cy="120"
+//                     r="24"
+//                     fill="#B91C1C"
+//                     opacity="0.9"
+//                   />
+//                   <rect
+//                     x="230"
+//                     y="190"
+//                     width="60"
+//                     height="40"
+//                     rx="8"
+//                     fill="#F59E0B"
+//                   />
+//                   <rect
+//                     x="110"
+//                     y="210"
+//                     width="60"
+//                     height="40"
+//                     rx="8"
+//                     fill="#FBBF24"
+//                   />
+//                   <circle cx="200" cy="250" r="30" fill="#F97316" />
+//                   <rect
+//                     x="170"
+//                     y="180"
+//                     width="40"
+//                     height="22"
+//                     rx="6"
+//                     fill="#E11D48"
+//                   />
+//                 </g>
+//               </svg>
+//             )}
+//           </div>
+//         </motion.div>
+//       </div>
+//     </section>
+//   );
+// }
 function Hero() {
-  const [imageAvailable, setImageAvailable] = useState(true);
   return (
-    <section className="bg-gradient-to-br from-yellow-100 via-yellow-50 to-red-50">
-      <div className=" mx-auto px-4 sm:px-6 py-14 md:py-5 grid md:grid-cols-2 gap-10 items-center">
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <p className="text-sm font-semibold tracking-wide uppercase text-red-700">
-            Authentic • Fresh • Handcrafted
-          </p>
-          <h1 className="mt-3 text-4xl md:text-5xl font-extrabold text-red-700 leading-tight">
-            Celebrate every moment with{" "}
-            <span className="text-red-600">Raj Kishore Sweets</span>
-          </h1>
-          <p className="mt-4 text-red-900/80">
-            From classic rasgulla to premium kaju katli—discover mithai that’s
-            made fresh daily with quality ingredients and traditional recipes.
-          </p>
-          <div className="mt-6 flex gap-3">
-            <a
-              href={waLink(
-                "Hi! I’d like to place an order for pickup/delivery."
-              )}
-              target="_blank"
-              rel="noreferrer"
-              className="px-5 py-3 rounded-2xl bg-red-600 text-yellow-100 font-semibold shadow hover:shadow-md"
-            >
-              Order on WhatsApp
-            </a>
-            <Link
-              to="/products"
-              className="px-5 py-3 rounded-2xl bg-yellow-200 text-red-800 font-semibold border border-yellow-300 hover:bg-yellow-300"
-            >
-              Browse Products
-            </Link>
-          </div>
-          <ul className="mt-6 text-sm text-red-900/80 grid grid-cols-2 gap-x-6 gap-y-2 list-disc pl-5">
-            <li>Same-day preparation on most items</li>
-            <li>Bulk & corporate orders welcome</li>
-            <li>Custom gift boxes</li>
-            <li>Hygienic, FSSAI compliant kitchen</li>
-          </ul>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.98 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-        >
-          <div className="relative aspect-square rounded-3xl bg-yellow-100 shadow-inner overflow-hidden">
-            {imageAvailable ? (
-              <img
-                src="/Photos/Rajkishore.jpg"
-                alt="Raj Kishore Sweet"
-                className="w-full h-full object-contain"
-                onError={() => setImageAvailable(false)} // fallback trigger
-              />
-            ) : (
-              <svg viewBox="0 0 400 400" className="w-full h-full">
-                <defs>
-                  <radialGradient id="plate" cx="50%" cy="50%" r="60%">
-                    <stop offset="0%" stopColor="#FEF9C3" />
-                    <stop offset="100%" stopColor="#FDE68A" />
-                  </radialGradient>
-                </defs>
-                <circle
-                  cx="200"
-                  cy="200"
-                  r="160"
-                  fill="url(#plate)"
-                  stroke="#F59E0B"
-                  strokeWidth="6"
-                />
-                <g>
-                  <circle
-                    cx="150"
-                    cy="160"
-                    r="28"
-                    fill="#DC2626"
-                    opacity="0.9"
-                  />
-                  <circle
-                    cx="210"
-                    cy="120"
-                    r="24"
-                    fill="#B91C1C"
-                    opacity="0.9"
-                  />
-                  <rect
-                    x="230"
-                    y="190"
-                    width="60"
-                    height="40"
-                    rx="8"
-                    fill="#F59E0B"
-                  />
-                  <rect
-                    x="110"
-                    y="210"
-                    width="60"
-                    height="40"
-                    rx="8"
-                    fill="#FBBF24"
-                  />
-                  <circle cx="200" cy="250" r="30" fill="#F97316" />
-                  <rect
-                    x="170"
-                    y="180"
-                    width="40"
-                    height="22"
-                    rx="6"
-                    fill="#E11D48"
-                  />
-                </g>
-              </svg>
-            )}
-          </div>
-        </motion.div>
-      </div>
+    <section className="w-full relative overflow-hidden">
+      <img
+        src="/hero.jpg"
+        alt="Hero"
+        className="w-full h-[300px] sm:h-[400px] md:h-[600px] lg:h-screen object-cover"
+      />
     </section>
   );
 }
