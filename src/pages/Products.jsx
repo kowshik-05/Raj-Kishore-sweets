@@ -30,7 +30,7 @@ export default function ProductsPage() {
       <SectionTitle
         kicker="Menu"
         title="Products"
-        subtitle="Tap a product to chat & order on WhatsApp."
+        subtitle="Tap a product to chat & order on WhatsApp"
       />
 
       <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
