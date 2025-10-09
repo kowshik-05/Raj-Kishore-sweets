@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import SkeletonCard from "../components/SkeletonCard";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import SectionTitle from "../components/SectionTitle";
@@ -145,6 +146,13 @@ function Hero() {
 }
 
 export default function HomePage() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <main>
       <Hero />
@@ -158,9 +166,11 @@ export default function HomePage() {
             subtitle="Timeless favourites loved by generations of Kanpurites."
           />
           <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {bestsellers.map((b) => (
-              <SweetCard key={b.id} item={b} />
-            ))}
+            {loading
+              ? Array(8)
+                  .fill(0)
+                  .map((_, i) => <SkeletonCard key={i} />)
+              : bestsellers.map((b) => <SweetCard key={b.id} item={b} />)}
           </div>
         </div>
       </section>

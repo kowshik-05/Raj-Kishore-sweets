@@ -16,9 +16,9 @@ export default function Logo() {
         <p className="text-xl font-extrabold text-red-700">
           Raj Kishore's Sweets
         </p>
-        {/* <p className="text-[11px] uppercase tracking-wider text-red-600/80">
-          Since • Quality • Taste
-        </p> */}
+        <p className="text-[11px] uppercase tracking-wider text-red-600/80">
+          Crafted in the heritage of Marwadi tradition, Raj Kishore's.
+        </p>
       </div>
     </Link>
   );
