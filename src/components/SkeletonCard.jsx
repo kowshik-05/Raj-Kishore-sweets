@@ -5,7 +5,7 @@ export default function SkeletonCard() {
   return (
     <Card>
       {/* Skeleton Image */}
-      <div className="aspect-[4/3] bg-gray-200 animate-pulse relative overflow-hidden">
+      <div className="aspect-[4/3] bg-gray-300 animate-pulse relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent animate-shimmer"></div>
       </div>
 
