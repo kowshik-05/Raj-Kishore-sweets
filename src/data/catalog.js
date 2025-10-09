@@ -39,7 +39,7 @@ export const catalog = [
   {
     id: "4",
     picture: "/images/DSC08765.JPG",
-    name: "Atta Gond Ladoo",
+    name: "Atta gond ladoo",
     price: 720,
     unit: "kg",
     cat: "mithai",
