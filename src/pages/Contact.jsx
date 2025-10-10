@@ -7,12 +7,15 @@ export default function ContactPage() {
   const [phone, setPhone] = useState("");
   const [msg, setMsg] = useState("");
 
-  const handleWhatsApp = (e) => {
-    e.preventDefault();
-    const text = `Hi! I am ${name || "a customer"}. Phone: ${phone || "N/A"}. ${
-      msg || "I have a query."
-    }`;
-    window.open(waLink(text), "_blank");
+  const text = `Hi! I am ${name || "a customer"}. Phone: ${phone || "N/A"}. ${
+    msg || "I have a query."
+  }`;
+
+  const handleWhatsApp = () => {
+    // Reset form after sending
+    setName("");
+    setPhone("");
+    setMsg("");
   };
 
   return (
@@ -23,11 +26,7 @@ export default function ContactPage() {
           title="Contact Us"
           subtitle="We usually reply within a few minutes during business hours."
         />
-        <form
-          onSubmit={handleWhatsApp}
-          className="mt-6 space-y-4"
-          aria-label="Contact form"
-        >
+        <form className="mt-6 space-y-4" aria-label="Contact form">
           <div>
             <label className="block text-sm font-medium text-red-800">
               Name
@@ -64,12 +63,15 @@ export default function ContactPage() {
             />
           </div>
           <div className="flex gap-3">
-            <button
-              type="submit"
-              className="px-5 py-3 rounded-2xl bg-red-600 text-yellow-50 font-semibold shadow hover:shadow-md"
+            <a
+              href={waLink(text)}
+              onClick={handleWhatsApp}
+              target="_blank"
+              rel="noreferrer"
+              className="px-5 py-3 rounded-2xl bg-red-600 text-yellow-50 font-semibold shadow hover:shadow-md inline-block"
             >
               Send via WhatsApp
-            </button>
+            </a>
             <a
               href="mailto:hello@rajkishoresweets.in"
               className="px-5 py-3 rounded-2xl bg-yellow-200 text-red-800 font-semibold border border-yellow-300"

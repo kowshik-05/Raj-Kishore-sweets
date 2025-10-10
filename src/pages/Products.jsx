@@ -53,6 +53,7 @@ export default function ProductsPage() {
                     src={item.picture}
                     alt={item.name}
                     className="w-full h-full object-cover rounded-t-2xl"
+                    loading="lazy"
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center bg-red-600/90 text-yellow-50 font-bold text-2xl rounded-t-2xl">
@@ -82,16 +83,19 @@ export default function ProductsPage() {
                   </p>
                 )} */}
 
-                <a
-                  href={waLink(
-                    `Hi! I’d like to order ${item.name} (₹${item.price}/${item.unit}).`
-                  )}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-3 inline-flex items-center text-sm font-semibold text-red-700 hover:underline"
+                <button
+                  onClick={() =>
+                    window.open(
+                      waLink(
+                        `Hi! I’d like to order ${item.name} (₹${item.price}/${item.unit}).`
+                      ),
+                      "_blank"
+                    )
+                  }
+                  className="mt-3 inline-flex items-center text-sm font-semibold text-red-700 hover:underline bg-transparent border-none cursor-pointer"
                 >
                   Chat & Order ↗
-                </a>
+                </button>
               </div>
             </Card>
           </a>
