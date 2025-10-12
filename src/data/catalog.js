@@ -8,15 +8,6 @@ export const categories = [
 
 export const catalog = [
   {
-    id: "1",
-    picture: "/images/DSC08735.JPG",
-    name: "Rasgulla",
-    price: 280,
-    unit: "kg",
-    cat: "bengali",
-    description: "Soft and spongy Bengali delight soaked in light sugar syrup.",
-  },
-  {
     id: "2",
     picture: "/images/DSC08750.JPG",
     name: "Khoya mix",
@@ -275,15 +266,7 @@ export const catalog = [
     cat: "mithai",
     description: "Sweet made from semolina, sugar, and ghee.",
   },
-  {
-    id: "30",
-    picture: "/images/DSC08891.JPG",
-    name: "Khajur bite",
-    price: 1260,
-    unit: "kg",
-    cat: "dryfruit",
-    description: "Rich roll flavored with saffron and dry fruits.",
-  },
+
   {
     id: "31",
     picture: "/images/DSC08895.JPG",

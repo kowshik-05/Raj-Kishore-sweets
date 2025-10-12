@@ -1,12 +1,11 @@
 import React, { useState, useEffect, lazy, Suspense } from "react";
 import SkeletonCard from "../components/SkeletonCard";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+
 import SectionTitle from "../components/SectionTitle";
 import Card from "../components/Card";
 import SweetCard from "../components/SweetCard";
 import { bestsellers, categories } from "../data/catalog";
-import { waLink } from "../utils/whatsapp";
+
 import CarouselSection from "../components/Carousel";
 
 const LazyAboutSection = lazy(() => import("../components/AboutSection"));
