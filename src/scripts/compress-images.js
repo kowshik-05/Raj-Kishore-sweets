@@ -5,19 +5,21 @@ import imageminPngquant from "imagemin-pngquant";
 
 (async () => {
   try {
-    await imagemin(
-      [
-        "public/images/*.{jpg,png}",
-        "public/Photos/*.{jpg,png}", // add your new folder
+    await imagemin(["public/images/*.{jpg,JPG,png,PNG}"], {
+      destination: "public/images",
+      plugins: [
+        imageminMozjpeg({ quality: 50 }),
+        imageminPngquant({ quality: [0.4, 0.6] }),
       ],
-      {
-        destination: "public", // keeps compressed images in the same folders
-        plugins: [
-          imageminMozjpeg({ quality: 50 }),
-          imageminPngquant({ quality: [0.6, 0.8] }),
-        ],
-      }
-    );
+    });
+
+    await imagemin(["public/Photos/*.{jpg,JPG,png,PNG}"], {
+      destination: "public/Photos",
+      plugins: [
+        imageminMozjpeg({ quality: 50 }),
+        imageminPngquant({ quality: [0.4, 0.6] }),
+      ],
+    });
     console.log("✅ Images in all folders compressed!");
   } catch (err) {
     console.error("❌ Image compression failed:", err);
