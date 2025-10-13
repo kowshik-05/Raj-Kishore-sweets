@@ -13,7 +13,7 @@ import imageminPngquant from "imagemin-pngquant";
       {
         destination: "public", // keeps compressed images in the same folders
         plugins: [
-          imageminMozjpeg({ quality: 75 }),
+          imageminMozjpeg({ quality: 50 }),
           imageminPngquant({ quality: [0.6, 0.8] }),
         ],
       }
