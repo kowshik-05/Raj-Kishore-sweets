@@ -13,6 +13,7 @@ export default function SweetCard({ item }) {
             src={item.picture}
             alt={item.name}
             className="w-full h-full object-cover"
+            loading="lazy"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center bg-red-600/90 text-yellow-50 font-bold text-2xl">

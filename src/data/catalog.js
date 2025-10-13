@@ -266,7 +266,6 @@ export const catalog = [
     cat: "mithai",
     description: "Sweet made from semolina, sugar, and ghee.",
   },
-
   {
     id: "31",
     picture: "/images/DSC08895.JPG",
@@ -379,7 +378,7 @@ export const catalog = [
 ];
 
 // Bestseller IDs (referencing catalog IDs)
-const bestsellerIds = ["1", "2", "3", "4", "9", "14", "21", "22"];
+const bestsellerIds = ["32", "2", "3", "4", "9", "14", "21", "22"];
 
 // Bestsellers derived from catalog
 export const bestsellers = catalog.filter((item) =>
