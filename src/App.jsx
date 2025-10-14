@@ -6,25 +6,33 @@ import HomePage from "./pages/Home";
 import AboutPage from "./pages/About";
 import ProductsPage from "./pages/Products";
 import ContactPage from "./pages/Contact";
+import DiwaliPopup from "./components/DiwaliPopup";
 
 export default function App() {
   return (
     <Router>
-      <div className="min-h-screen w-full bg-white text-red-900">
+      <div className="min-h-screen w-full bg-white text-red-900 relative">
         <a
           href="#content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-yellow-200 px-3 py-2 rounded"
         >
           Skip to content
         </a>
+
         <Header />
+
+        {/* 🎉 Diwali Popup (visible on all pages) */}
+        <DiwaliPopup />
+
         <div id="content" />
+
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
+
         <Footer />
       </div>
     </Router>
