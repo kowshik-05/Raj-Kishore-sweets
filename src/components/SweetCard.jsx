@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Card from "./Card";
 import { waLink } from "../utils/whatsapp";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function SweetCard({ item }) {
   return (
@@ -9,11 +11,11 @@ export default function SweetCard({ item }) {
       {/* Image / Initials */}
       <div className="aspect-[4/3] bg-gradient-to-br from-yellow-50 to-red-50">
         {item.picture ? (
-          <img
+          <LazyLoadImage
             src={item.picture}
             alt={item.name}
             className="w-full h-full object-cover"
-            loading="lazy"
+            effect="blur"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center bg-red-600/90 text-yellow-50 font-bold text-2xl">

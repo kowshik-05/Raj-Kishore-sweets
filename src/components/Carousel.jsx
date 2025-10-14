@@ -1,27 +1,29 @@
 import React, { useMemo } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
-// ✅ Added images from public/images
+// ✅ Added images from public/photos
 const defaultImages = [
-  "/Photos/Rajkishore-1.jpg",
-  "/Photos/Rajkishore-2.jpg",
-  "/Photos/Rajkishore-3.jpg",
-  "/Photos/Rajkishore-4.jpg",
-  "/Photos/Rajkishore-5.jpg",
-  "/Photos/Rajkishore-6.jpg",
-  "/Photos/Rajkishore-7.jpg",
-  "/Photos/Rajkishore-8.jpg",
-  "/Photos/Rajkishore-9.jpg",
-  "/Photos/Rajkishore-10.jpg",
-  "/Photos/Rajkishore-11.jpg",
-  "/Photos/Rajkishore-12.jpg",
-  "/Photos/Rajkishore-13.jpg",
-  "/Photos/Rajkishore-14.jpg",
-  "/Photos/Rajkishore-15.jpg",
-  "/Photos/Rajkishore-16.jpg",
-  "/Photos/Rajkishore-17.jpg",
-  "/Photos/Rajkishore-18.jpg",
-  "/Photos/Rajkishore-19.jpg",
-  "/Photos/Rajkishore-20.jpg",
+  "/photos/Rajkishore-1.webp",
+  "/photos/Rajkishore-2.webp",
+  "/photos/Rajkishore-3.webp",
+  "/photos/Rajkishore-4.webp",
+  "/photos/Rajkishore-5.webp",
+  "/photos/Rajkishore-6.webp",
+  "/photos/Rajkishore-7.webp",
+  "/photos/Rajkishore-8.webp",
+  "/photos/Rajkishore-9.webp",
+  "/photos/Rajkishore-10.webp",
+  "/photos/Rajkishore-11.webp",
+  "/photos/Rajkishore-12.webp",
+  "/photos/Rajkishore-13.webp",
+  "/photos/Rajkishore-14.webp",
+  "/photos/Rajkishore-15.webp",
+  "/photos/Rajkishore-16.webp",
+  "/photos/Rajkishore-17.webp",
+  "/photos/Rajkishore-18.webp",
+  "/photos/Rajkishore-19.webp",
+  "/photos/Rajkishore-20.webp",
 ];
 
 export default function CarouselSection({
@@ -138,11 +140,11 @@ function Card({ src }) {
           </div>
         </div>
       ) : (
-        <img
+        <LazyLoadImage
           src={src}
           alt="Sweet item"
           className="w-full h-full object-cover"
-          loading="lazy"
+          effect="blur"
         />
       )}
     </div>

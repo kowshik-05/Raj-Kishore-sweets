@@ -9,7 +9,7 @@ export const categories = [
 export const catalog = [
   {
     id: "2",
-    picture: "/images/DSC08750.JPG",
+    picture: "/images/DSC08750.webp",
     name: "Khoya mix",
     price: 600,
     unit: "kg",
@@ -19,7 +19,7 @@ export const catalog = [
   },
   {
     id: "3",
-    picture: "/images/DSC08751.JPG",
+    picture: "/images/DSC08751.webp",
     name: "Boondi Ladoo plane",
     price: 620,
     unit: "kg",
@@ -29,7 +29,7 @@ export const catalog = [
   },
   {
     id: "4",
-    picture: "/images/DSC08765.JPG",
+    picture: "/images/DSC08765.webp",
     name: "Atta gond ladoo",
     price: 720,
     unit: "kg",
@@ -39,7 +39,7 @@ export const catalog = [
   },
   {
     id: "5",
-    picture: "/images/DSC08770.JPG",
+    picture: "/images/DSC08770.webp",
     name: "Boondi ladoo plane ",
     price: 310,
     unit: "half kg",
@@ -49,7 +49,7 @@ export const catalog = [
   },
   {
     id: "6",
-    picture: "/images/DSC08775.JPG",
+    picture: "/images/DSC08775.webp",
     name: "Boondi ladoo mewa",
     price: 720,
     unit: "kg",
@@ -59,7 +59,7 @@ export const catalog = [
   },
   {
     id: "7",
-    picture: "/images/DSC08776.JPG",
+    picture: "/images/DSC08776.webp",
     name: "Churam ladoo",
     price: 720,
     unit: "kg",
@@ -69,7 +69,7 @@ export const catalog = [
   },
   {
     id: "8",
-    picture: "/images/DSC08788.JPG",
+    picture: "/images/DSC08788.webp",
     name: "Besan Barfi",
     price: 660,
     unit: "kg",
@@ -79,7 +79,7 @@ export const catalog = [
   },
   {
     id: "9",
-    picture: "/images/DSC08794.JPG",
+    picture: "/images/DSC08794.webp",
     name: "Kheer kadam",
     price: 600,
     unit: "kg",
@@ -88,7 +88,7 @@ export const catalog = [
   },
   {
     id: "10",
-    picture: "/images/DSC08797.JPG",
+    picture: "/images/DSC08797.webp",
     name: "Deluxe kheer kadam",
     price: 600,
     unit: "kg",
@@ -97,7 +97,7 @@ export const catalog = [
   },
   {
     id: "11",
-    picture: "/images/DSC08802.JPG",
+    picture: "/images/DSC08802.webp",
     name: "Chandrakala",
     price: 660,
     unit: "kg",
@@ -106,7 +106,7 @@ export const catalog = [
   },
   {
     id: "12",
-    picture: "/images/DSC08806.JPG",
+    picture: "/images/DSC08806.webp",
     name: "Magdal",
     price: 660,
     unit: "kg",
@@ -115,7 +115,7 @@ export const catalog = [
   },
   {
     id: "13",
-    picture: "/images/DSC08811.JPG",
+    picture: "/images/DSC08811.webp",
     name: "Kaju gilori",
     price: 1260,
     unit: "kg",
@@ -124,7 +124,7 @@ export const catalog = [
   },
   {
     id: "14",
-    picture: "/images/DSC08813.JPG",
+    picture: "/images/DSC08813.webp",
     name: "Kaju gujhya",
     price: 1260,
     unit: "kg",
@@ -133,7 +133,7 @@ export const catalog = [
   },
   {
     id: "15",
-    picture: "/images/DSC08818.JPG",
+    picture: "/images/DSC08818.webp",
     name: "Kaju roll",
     price: 1260,
     unit: "kg",
@@ -142,7 +142,7 @@ export const catalog = [
   },
   {
     id: "16",
-    picture: "/images/DSC08827.JPG",
+    picture: "/images/DSC08827.webp",
     name: "Anjir roll",
     price: 1260,
     unit: "kg",
@@ -151,7 +151,7 @@ export const catalog = [
   },
   {
     id: "17",
-    picture: "/images/DSC08828.JPG",
+    picture: "/images/DSC08828.webp",
     name: "Anjir daimond",
     price: 1260,
     unit: "kg",
@@ -160,7 +160,7 @@ export const catalog = [
   },
   {
     id: "18",
-    picture: "/images/DSC08838.JPG",
+    picture: "/images/DSC08838.webp",
     name: "Kaju pann",
     price: 1260,
     unit: "kg",
@@ -169,7 +169,7 @@ export const catalog = [
   },
   {
     id: "19",
-    picture: "/images/DSC08842.JPG",
+    picture: "/images/DSC08842.webp",
     name: "Kaju kesar",
     price: 1260,
     unit: "kg",
@@ -178,7 +178,7 @@ export const catalog = [
   },
   {
     id: "20",
-    picture: "/images/DSC08846.JPG",
+    picture: "/images/DSC08846.webp",
     name: "Kaju bite",
     price: 1260,
     unit: "kg",
@@ -187,7 +187,7 @@ export const catalog = [
   },
   {
     id: "21",
-    picture: "/images/DSC08851.JPG",
+    picture: "/images/DSC08851.webp",
     name: "Kaju kamal",
     price: 1260,
     unit: "kg",
@@ -196,7 +196,7 @@ export const catalog = [
   },
   {
     id: "22",
-    picture: "/images/DSC08856.JPG",
+    picture: "/images/DSC08856.webp",
     name: "Khajur bite",
     price: 1260,
     unit: "kg",
@@ -205,7 +205,7 @@ export const catalog = [
   },
   {
     id: "23",
-    picture: "/images/DSC08860.JPG",
+    picture: "/images/DSC08860.webp",
     name: "Mewa mix",
     price: 1260,
     unit: "kg",
@@ -214,7 +214,7 @@ export const catalog = [
   },
   {
     id: "24",
-    picture: "/images/DSC08865.JPG",
+    picture: "/images/DSC08865.webp",
     name: "Mewa mix",
     price: 1260,
     unit: "kg",
@@ -223,7 +223,7 @@ export const catalog = [
   },
   {
     id: "25",
-    picture: "/images/DSC08869.JPG",
+    picture: "/images/DSC08869.webp",
     name: "Kaju chakri",
     price: 1260,
     unit: "kg",
@@ -232,7 +232,7 @@ export const catalog = [
   },
   {
     id: "26",
-    picture: "/images/DSC08873.JPG",
+    picture: "/images/DSC08873.webp",
     name: "Kaju daimond",
     price: 1260,
     unit: "kg",
@@ -241,7 +241,7 @@ export const catalog = [
   },
   {
     id: "27",
-    picture: "/images/DSC08876.JPG",
+    picture: "/images/DSC08876.webp",
     name: "Anjir chakri",
     price: 1260,
     unit: "kg",
@@ -250,7 +250,7 @@ export const catalog = [
   },
   {
     id: "28",
-    picture: "/images/DSC08883.JPG",
+    picture: "/images/DSC08883.webp",
     name: "kaju barfi",
     price: 1160,
     unit: "kg",
@@ -259,7 +259,7 @@ export const catalog = [
   },
   {
     id: "29",
-    picture: "/images/DSC08886.JPG",
+    picture: "/images/DSC08886.webp",
     name: "Kaju Starwberry bite",
     price: 1260,
     unit: "kg",
@@ -268,7 +268,7 @@ export const catalog = [
   },
   {
     id: "31",
-    picture: "/images/DSC08895.JPG",
+    picture: "/images/DSC08895.webp",
     name: "Kaju chakri",
     price: 1260,
     unit: "kg",
@@ -277,7 +277,7 @@ export const catalog = [
   },
   {
     id: "32",
-    picture: "/images/DSC08914.JPG",
+    picture: "/images/DSC08914.webp",
     name: "Ghee koya mix",
     price: 630,
     unit: "kg",
@@ -286,7 +286,7 @@ export const catalog = [
   },
   {
     id: "33",
-    picture: "/images/DSC08919.JPG",
+    picture: "/images/DSC08919.webp",
     name: "Ghee koya mix",
     price: 630,
     unit: "kg",
@@ -295,7 +295,7 @@ export const catalog = [
   },
   {
     id: "34",
-    picture: "/images/DSC08923.JPG",
+    picture: "/images/DSC08923.webp",
     name: "Ghee koya mix",
     price: 630,
     unit: "kg",
@@ -304,7 +304,7 @@ export const catalog = [
   },
   {
     id: "35",
-    picture: "/images/DSC08928.JPG",
+    picture: "/images/DSC08928.webp",
     name: "Badam Kesar",
     price: 1400,
     unit: "kg",
@@ -313,7 +313,7 @@ export const catalog = [
   },
   {
     id: "36",
-    picture: "/images/DSC08930.JPG",
+    picture: "/images/DSC08930.webp",
     name: "Special 4 type ladoo",
     price: 720,
     unit: "kg",
@@ -323,7 +323,7 @@ export const catalog = [
   },
   {
     id: "37",
-    picture: "/images/DSC08934.JPG",
+    picture: "/images/DSC08934.webp",
     name: "Kaju barfi",
     price: 580,
     unit: "half kg",
@@ -332,7 +332,7 @@ export const catalog = [
   },
   {
     id: "38",
-    picture: "/images/DSC08936.JPG",
+    picture: "/images/DSC08936.webp",
     name: "Badam barfi",
     price: 1300,
     unit: "kg",
@@ -341,7 +341,7 @@ export const catalog = [
   },
   {
     id: "39",
-    picture: "/images/DSC08939.JPG",
+    picture: "/images/DSC08939.webp",
     name: "Kaju barfi",
     price: 1260,
     unit: "kg",
@@ -350,7 +350,7 @@ export const catalog = [
   },
   {
     id: "40",
-    picture: "/images/DSC08944.JPG",
+    picture: "/images/DSC08944.webp",
     name: "Khoya pudding",
     price: 600,
     unit: "kg",
@@ -359,7 +359,7 @@ export const catalog = [
   },
   {
     id: "41",
-    picture: "/images/DSC08950.JPG",
+    picture: "/images/DSC08950.webp",
     name: "Khoya pudding",
     price: 600,
     unit: "kg",
@@ -368,7 +368,7 @@ export const catalog = [
   },
   {
     id: "42",
-    picture: "/images/DSC08958.JPG",
+    picture: "/images/DSC08958.webp",
     name: "Khoya kalsh",
     price: 600,
     unit: "kg",

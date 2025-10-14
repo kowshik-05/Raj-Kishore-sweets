@@ -5,7 +5,7 @@ import imageminPngquant from "imagemin-pngquant";
 
 (async () => {
   try {
-    await imagemin(["public/images/*.{jpg,JPG,png,PNG}"], {
+    await imagemin(["public/images/*.{jpg,JPG,png,PNG,webp}"], {
       destination: "public/images",
       plugins: [
         imageminMozjpeg({ quality: 50 }),
@@ -13,7 +13,7 @@ import imageminPngquant from "imagemin-pngquant";
       ],
     });
 
-    await imagemin(["public/Photos/*.{jpg,JPG,png,PNG}"], {
+    await imagemin(["public/Photos/*.{jpg,JPG,png,PNG,webp}"], {
       destination: "public/Photos",
       plugins: [
         imageminMozjpeg({ quality: 50 }),

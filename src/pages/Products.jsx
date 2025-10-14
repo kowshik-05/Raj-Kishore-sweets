@@ -4,6 +4,8 @@ import FilterChip from "../components/FilterChip";
 import Card from "../components/Card";
 import { catalog, categories } from "../data/catalog";
 import { waLink } from "../utils/whatsapp";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function ProductsPage() {
   const urlParams = new URLSearchParams(
@@ -49,11 +51,11 @@ export default function ProductsPage() {
               {/* Image area */}
               <div className="aspect-[4/3] bg-gradient-to-br from-yellow-50 to-red-50">
                 {item.picture ? (
-                  <img
+                  <LazyLoadImage
                     src={item.picture}
                     alt={item.name}
                     className="w-full h-full object-cover rounded-t-2xl"
-                    loading="lazy"
+                    effect="blur"
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center bg-red-600/90 text-yellow-50 font-bold text-2xl rounded-t-2xl">
